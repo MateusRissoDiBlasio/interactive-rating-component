@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+
+  <section id="ratingContainer">
+    <img src="./images/icon-star.svg" alt="rating star icon">
+    
+    <div id="feedBackContainer">
+      <h1>How did we do?</h1>
+
+      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+      <div id="ratingStarBtns">
+        
+        <span id="oneStar" class="stars">1</span>
+        <span id="twoStars" class="stars">2</span>
+        <span id="threeStars" class="stars">3</span>
+        <span id="fourStars" class="stars">4</span>
+        <span id="fiveStars" class="stars">5</span>
+
+      </div>
+    </div>
+
+    <button>Submit</button>
+    
+  </section>
+
+  <section id="feedbackMessageContainer">
+    <img src="./images/illustration-thank-you.svg" alt="">
+
+    <p>You selected <span id="selectedStars"></span> out of 5</p>
+
+    <div id="thanksMsg">
+      
+      <h1>Thank you!</h1>
+
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+
+    </div>
+
+  </section>
+  
+  <script src="./index.js"></script>
+</body>
+<footer class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Mateus Risso Di Blasio</a>.
+</footer>
+</html>

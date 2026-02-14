@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    background-color:  hsl(216, 12%, 8%);
+    padding: 0px 24px;
+    font-family: "Overpass", sans-serif;
+}
+
+#ratingContainer{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(hsl(215, 20%, 17%), hsl(216, 24%, 12%));
+    padding: 24px;
+    gap: 24px;
+    border-radius: 15px;
+    height: 312px;
+    width: 279px;
+    align-self: center;
+    img{
+        width: 13.96px;
+        height: 13.33px;
+        padding: 13px;
+        border-radius: 20px;
+        background-color: hsl(213, 19%, 18%);
+    }
+    #feedBackContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h1{
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0;
+            font-weight: bold;
+            color: hsl(0, 100%, 100%);
+        }
+        p{
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0;
+            color: hsl(217, 12%, 63%);
+        }
+        #ratingStarBtns{
+            display: flex;
+            gap: 16px;
+            span{
+                align-content: center;
+                text-align: center;
+                width: 42px;
+                height: 42px;
+                background-color: hsl(213, 19%, 18%);
+                border-radius: 21px;
+                font-size: 14px;
+                line-height: 18px;
+                color: hsl(217, 12%, 63%);
+                font-weight: bold;
+            }
+            span:hover{
+                transition: 0.5s;
+                background-color: hsl(25, 97%, 53%);
+                cursor: pointer;
+                color: hsl(213, 19%, 18%);
+            }
+            span.selected{
+                transition: 1s;
+                background-color: hsl(0, 100%, 100%);
+                color: hsl(213, 19%, 18%);
+            }
+            span.selected:hover{
+                transition: 1s;
+                background-color: hsl(25, 97%, 53%);
+            }
+        }
+    }
+    button{
+        text-transform: uppercase;
+        background-color: hsl(25, 97%, 53%);
+        border: none;
+        border-radius: 22.5px;
+        color: hsl(216, 12%, 8%);
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.87px;
+        font-weight: bold;
+        height: 45px;
+        font-family: "Overpass", sans-serif;
+    }
+    button:hover{
+        transition: 0.5s;
+        background-color: hsl(0, 100%, 100%);
+        color: hsl(213, 19%, 18%);
+        cursor: pointer;
+    }
+}
+
+#feedbackMessageContainer{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(hsl(215, 20%, 17%), hsl(216, 24%, 12%));
+    padding: 24px;
+    gap: 24px;
+    height: 312px;
+    border-radius: 15px;
+    width: 279px;
+    align-self: center;
+    img{
+        width: 144px;
+        height: 96px;
+    }
+    p{
+        display: flex;
+        width: 168px;
+        height: 32px;
+        gap: 4px;
+        background-color: hsl(213, 19%, 18%);
+        border-radius: 22.5px;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        color: hsl(25, 97%, 53%);
+        font-weight: unset;
+        font-weight: 300;
+    }
+    #thanksMsg{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        height: 112px;
+        h1{
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0px;
+            color: hsl(0, 100%, 100%);
+        }
+        p{
+            background-color: unset;
+            width: 279px;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0px;
+            color: hsl(217, 12%, 63%);
+            height: 66px;
+            text-align: center;
+        }
+    }
+}
+   
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 50px;
+    color: hsl(0, 100%, 100%);
+    a { 
+        color: hsl(25, 97%, 53%);
+    }
+}
+
+@media (min-width: 768px){
+    #ratingContainer{
+        display: flex;
+        padding: 32px 24px;
+        gap: 32px;
+        height: 352px;
+        border-radius: 30px;
+        width: 364px;
+        img{
+            width: 16.75px;
+            height: 16px;
+            padding: 16px 15.625px;
+            border-radius: 24px;
+            transform: translateX(7px);
+        }
+        #feedBackContainer{
+            gap: 16px;
+            width: 351px;
+            align-self: center;
+            h1{
+                font-size: 28px;
+                line-height: 35px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 24px;
+            }
+            #ratingStarBtns{
+                gap: 24px;
+                span{
+                    width: 51px;
+                    height: 51px;
+                    border-radius: 25.5px;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+        button{
+            align-self: center;
+            width: 351px;
+        }
+    }
+
+    #feedbackMessageContainer{
+        display: none;
+        padding: 40px 32px;
+        gap: 32px;
+        height: 336px;
+        border-radius: 30px;
+        width: 348px;
+        img{
+            width: 162px;
+            height: 108px;
+        }
+        p{
+            width: 193px;
+            height: 32px;
+            gap: 4px;
+            border-radius: 22.5px;
+            font-size: 15px;
+            line-height: 24px;            
+        }
+        #thanksMsg{
+            height: 123px;
+            h1{
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 35px;
+            }
+            p{
+                width: 338px;
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0px;
+                color: hsl(217, 12%, 63%);
+                height: 72px;
+            }
+        }
+    }
+}
