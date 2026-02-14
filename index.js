@@ -18,5 +18,9 @@ submitBtn.addEventListener('click', ()=>{
         ratingContainer.style.display = 'none';
         feedbackMessageContainer.style.display = 'flex';
         selectedStars.textContent = result;
+    }else{
+        ratingContainer.style.display = 'none';
+        feedbackMessageContainer.style.display = 'flex';
+        selectedStars.textContent = '3';
     }
 });
