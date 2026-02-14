@@ -47,11 +47,11 @@ Users should be able to:
 
 ### What I learned
 
-
+Learning how accessibility focus is important to web development.
 
 ### Continued development
 
-
+Going further on accessibility patterns and establish good practices on developing html.
 
 ## Author
 
