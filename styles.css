@@ -12,6 +12,10 @@ body{
     padding: 0px 24px;
     font-family: "Overpass", sans-serif;
 }
+main{
+    display: flex;
+    flex-direction: column;
+}
 
 #ratingContainer{
     display: flex;
@@ -51,7 +55,7 @@ body{
         #ratingStarBtns{
             display: flex;
             gap: 16px;
-            span{
+            button{
                 align-content: center;
                 text-align: center;
                 width: 42px;
@@ -63,18 +67,18 @@ body{
                 color: hsl(217, 12%, 63%);
                 font-weight: bold;
             }
-            span:hover{
+            button:hover{
                 transition: 0.5s;
                 background-color: hsl(25, 97%, 53%);
                 cursor: pointer;
                 color: hsl(213, 19%, 18%);
             }
-            span.selected{
+            button.selected{
                 transition: 1s;
                 background-color: hsl(0, 100%, 100%);
                 color: hsl(213, 19%, 18%);
             }
-            span.selected:hover{
+            button.selected:hover{
                 transition: 1s;
                 background-color: hsl(25, 97%, 53%);
             }
@@ -198,7 +202,7 @@ body{
             }
             #ratingStarBtns{
                 gap: 24px;
-                span{
+                button{
                     width: 51px;
                     height: 51px;
                     border-radius: 25.5px;

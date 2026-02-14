@@ -13,45 +13,45 @@
 
 </head>
 <body>
+  <main>
+    <section id="ratingContainer" aria-label="User rating container">
+      <img src="./images/icon-star.svg" alt="rating star icon">
+      
+      <div id="feedBackContainer">
+        <h1>How did we do?</h1>
 
-  <section id="ratingContainer">
-    <img src="./images/icon-star.svg" alt="rating star icon">
-    
-    <div id="feedBackContainer">
-      <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <div id="ratingStarBtns" role="radiogroup" aria-label="Star rating">
+          
+          <button id="oneStar" class="stars" role="radio" tabindex="0" aria-checked="false">1</button>
+          <button id="twoStars" class="stars" role="radio" tabindex="-1" aria-checked="false">2</button>
+          <button id="threeStars" class="stars" role="radio" tabindex="-1" aria-checked="true">3</button>
+          <button id="fourStars" class="stars" role="radio" tabindex="-1" aria-checked="false">4</button>
+          <button id="fiveStars" class="stars" role="radio" tabindex="-1" aria-checked="false">5</button>
 
-      <div id="ratingStarBtns">
+        </div>
+      </div>
+
+      <button id="submitbtn" role="Submit button" aria-label="Submit rated star">Submit</button>
+      
+    </section>
+
+    <section id="feedbackMessageContainer">
+      <img src="./images/illustration-thank-you.svg" alt="">
+
+      <p>You selected <span id="selectedStars"></span> out of 5</p>
+
+      <div id="thanksMsg">
         
-        <span id="oneStar" class="stars">1</span>
-        <span id="twoStars" class="stars">2</span>
-        <span id="threeStars" class="stars">3</span>
-        <span id="fourStars" class="stars">4</span>
-        <span id="fiveStars" class="stars">5</span>
+        <h1>Thank you!</h1>
+
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
 
       </div>
-    </div>
 
-    <button>Submit</button>
-    
-  </section>
-
-  <section id="feedbackMessageContainer">
-    <img src="./images/illustration-thank-you.svg" alt="">
-
-    <p>You selected <span id="selectedStars"></span> out of 5</p>
-
-    <div id="thanksMsg">
-      
-      <h1>Thank you!</h1>
-
-      <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
-
-    </div>
-
-  </section>
-  
+    </section>
+  </main>
   <script src="./index.js"></script>
 </body>
 <footer class="attribution">

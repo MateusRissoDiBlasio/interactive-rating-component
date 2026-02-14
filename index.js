@@ -1,5 +1,5 @@
 const ratingStarsBtns = document.querySelectorAll('.stars');
-const submitBtn = document.querySelector('button');
+const submitBtn = document.getElementById('submitbtn');
 const selectedStars = document.getElementById('selectedStars');
 const ratingContainer = document.getElementById('ratingContainer');
 const feedbackMessageContainer = document.getElementById('feedbackMessageContainer');

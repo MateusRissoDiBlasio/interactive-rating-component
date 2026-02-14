@@ -27,11 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot - mobile](screenshot-mobile.png)
+![Screenshot - desktop](screenshot-desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-rating-component-IDSxLZou89](https://www.frontendmentor.io/solutions/interactive-rating-component-IDSxLZou89)
 - Live Site URL: [https://mateusrissodiblasio.github.io/interactive-rating-component/](https://mateusrissodiblasio.github.io/interactive-rating-component/)
 
 ## My process
